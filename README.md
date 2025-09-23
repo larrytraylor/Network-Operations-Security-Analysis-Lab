@@ -1,0 +1,2 @@
+# Network-Security-Operations-Incident-Response-Lab
+Comprehensive network security operations project demonstrating SOC/NOC skills through 6 real-world scenarios: DNS attack investigation, network forensics, infrastructure troubleshooting, incident response, firewall management, and security scanning. Features hands-on experience with Wireshark, pfSense, DNS management, and vulnerability assessment.
