@@ -1,4 +1,4 @@
-# Network Operations & Security Analysis Lab
+<img width="960" height="540" alt="Project Proposal Presentation (1)" src="https://github.com/user-attachments/assets/86f06080-31b9-48c9-91ee-86cfbc461ef9" />
 
 Comprehensive network security operations project demonstrating SOC/NOC skills through 6 real-world scenarios: DNS attack investigation, network forensics, infrastructure troubleshooting, incident response, firewall management, and security scanning. Features hands-on experience with Wireshark, pfSense, DNS management, and vulnerability assessment.
 
