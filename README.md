@@ -2,7 +2,19 @@
 
 Comprehensive network security operations project demonstrating SOC/NOC skills through 6 real-world scenarios: DNS attack investigation, network forensics, infrastructure troubleshooting, incident response, firewall management, and security scanning. Features hands-on experience with Wireshark, pfSense, DNS management, and vulnerability assessment.
 
-The project simulates authentic enterprise security challenges including DNS poisoning attacks, network forensics investigations, infrastructure outages, access control failures, and compliance violations. Each scenario follows industry-standard incident response methodologies with detailed documentation, evidence collection, and remediation procedures.
+## Industry Relevance
+
+This project simulates real-world scenarios encountered daily in enterprise security operations centers. Each incident represents authentic challenges faced by SOC analysts, NOC engineers, and IT support specialists, demonstrating practical skills directly applicable to cybersecurity careers.
+
+The systematic approach to threat detection, investigation, and remediation showcases the critical thinking and technical expertise required for effective security operations in enterprise environments.
+
+## Learning Outcomes
+
+- **Incident Response:** Proven ability to detect, investigate, and remediate security incidents
+- **Network Security:** Deep understanding of enterprise network security architectures  
+- **Forensic Analysis:** Practical experience with digital forensics and evidence handling
+- **Infrastructure Management:** Hands-on experience with critical network infrastructure
+- **Compliance Operations:** Knowledge of security auditing and regulatory requirements
 
 **Key Capabilities Demonstrated:**
 - Security incident detection and response
@@ -26,8 +38,6 @@ The project simulates authentic enterprise security challenges including DNS poi
 - **Network Security:** pfSense Firewall, VyOS Routers, DMZ Architecture  
 - **Endpoint Systems:** Windows 10 Workstations, Ubuntu Linux Servers
 - **Security Lab:** InfoSec Assessment Environment, Virtualized Network
-
-## Detailed Incident Analysis
 
 ## Help Desk Ticket 1: DNS Redirection Issue
 
@@ -217,65 +227,3 @@ services that may be running outside of the permitted services. Permitted servic
 
 **Tools Used**: Nmap Security Scanner, Port Analysis, Vulnerability Assessment  
 **[View Security Assessment →](./Ticket-06-Vulnerability-Assessment/)**
-
-## Professional Competencies
-
-## SOC Analyst Skills
-- Security incident detection and response
-- Network forensics and threat hunting
-- Digital evidence collection and preservation
-- Threat intelligence analysis and IOC identification
-- Security compliance auditing and reporting
-
-## NOC Engineer Skills  
-- Enterprise network infrastructure management
-- Critical system restoration and business continuity
-- Routing protocol configuration and optimization
-- Firewall rule management and access control
-- Change management and documentation procedures
-
-## Help Desk Specialist Skills
-- Desktop support and end-user troubleshooting
-- Network connectivity diagnosis and resolution
-- Clear technical communication and user guidance
-- Systematic problem-solving methodologies
-- Service verification and quality assurance
-
-## Repository Structure
-
-```
-Network-Security-Operations-Incident-Response-Lab/
-├── README.md                          # This file - project overview
-├── METHODOLOGY.md                     # Incident response procedures
-├── Ticket-01-DNS-Attack-Response/     # DNS poisoning investigation
-├── Ticket-02-Network-Forensics/       # Copyright infringement case
-├── Ticket-03-Infrastructure-Analysis/ # Critical server connectivity  
-├── Ticket-04-Endpoint-Support/        # Desktop connectivity support
-├── Ticket-05-Firewall-Management/     # Access control restoration
-├── Ticket-06-Vulnerability-Assessment/# Security compliance scanning
-├── Tools-and-Scripts/                 # Custom configurations
-└── Documentation/                     # Technical references
-```
-
-## Technical Skills Demonstrated
-
-- **Network Protocol Analysis:** with Wireshark packet inspection and filtering
-- **DNS Security Management:** including zone configuration and attack remediation  
-- **Enterprise Routing:** with OSPF implementation and NAT configuration
-- **Firewall Administration:** using pfSense for access control and traffic management
-- **Security Scanning:** with Nmap for vulnerability assessment and compliance validation
-- **Incident Documentation:** following industry-standard security operation procedures
-
-## Industry Relevance
-
-This project simulates real-world scenarios encountered daily in enterprise security operations centers. Each incident represents authentic challenges faced by SOC analysts, NOC engineers, and IT support specialists, demonstrating practical skills directly applicable to cybersecurity careers.
-
-The systematic approach to threat detection, investigation, and remediation showcases the critical thinking and technical expertise required for effective security operations in enterprise environments.
-
-## Learning Outcomes
-
-- **Incident Response:** Proven ability to detect, investigate, and remediate security incidents
-- **Network Security:** Deep understanding of enterprise network security architectures  
-- **Forensic Analysis:** Practical experience with digital forensics and evidence handling
-- **Infrastructure Management:** Hands-on experience with critical network infrastructure
-- **Compliance Operations:** Knowledge of security auditing and regulatory requirements
