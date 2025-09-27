@@ -49,14 +49,19 @@ A help desk technician states that the server team recently installed updates to
 the DNS server for the organization. The resolution must be organization-wide.
 ```
 
-**Troubleshooting Process**:
-1. Verified the issue by attempting to access www.wgu.edu, which resulted in a "Server Not Found" error
-2. Accessed the DNS server on DMZ_Server_3 using TightVNC Viewer to examine its configuration
+**Troubleshooting Process**
+
+1. Verified the issue by attempting to access www.wgu.edu, which resulted in a "Server Not Found" error<img width="462" height="278" alt="image" src="https://github.com/user-attachments/assets/aaa3909f-c4a2-49f8-9bdd-5850229fa022" />
+
+2. Accessed the DNS server on DMZ_Server_3 using TightVNC Viewer to examine its configuration<img width="468" height="309" alt="image" src="https://github.com/user-attachments/assets/3091b983-61e9-40ca-9b88-f70b230ac3a5" />
+
 3. In DNS Manager, examined the forward lookup zone for wgu.edu and discovered both the root domain (wgu.edu) and the www subdomain were configured with Host (A) records pointing to 10.10.20.2
 4. This incorrect IP address (10.10.20.2) explained why users were being redirected to a suspicious site - the DNS server was resolving wgu.edu to an IP address that hosted potentially malicious content
-5. To resolve the issue, deleted the entire forward lookup zone for wgu.edu
+5. To resolve the issue, deleted the entire forward lookup zone for wgu.edu<img width="468" height="308" alt="image" src="https://github.com/user-attachments/assets/d1b720f3-c65d-4686-a0e1-57155d672a56" />
+
 6. After deletion, verified that users would now resolve wgu.edu via the organization's upstream DNS providers, which have the correct records
-7. Verified the resolution by testing access to www.wgu.edu, which now successfully loaded the legitimate WGU website
+7. Verified the resolution by testing access to www.wgu.edu, which now successfully loaded the WGU website <img width="468" height="355" alt="image" src="https://github.com/user-attachments/assets/fb6e7b3f-7ae2-4271-abc2-6a788ff668d6" />
+
 8. Since DNS changes propagate throughout the organization automatically, this resolution is organization-wide as required
 
 **Skills Demonstrated**:
@@ -67,7 +72,6 @@ the DNS server for the organization. The resolution must be organization-wide.
 - **Impact Assessment:** Verified organization-wide restoration of legitimate web access
 
 **Tools Used**: DNS Manager, TightVNC, Network Connectivity Testing  
-**[View Detailed Analysis →](./Ticket-01-DNS-Attack-Response/)**
 
 ---
 
@@ -84,7 +88,8 @@ asked you to identify where the FTP site is being hosted.
 1. Opened the provided pcap file in Wireshark
 2. Applied the display filter "ftp or ftp-data" to isolate only FTP-related traffic
 3. Examined the filtered packets to identify FTP server communications
-4. Found evidence of an FTP server at IP address 10.10.20.2 advertising itself as a "warez FTP service"
+4. Found evidence of an FTP server at IP address 10.10.20.2 advertising itself as a "warez FTP service"<img width="468" height="235" alt="image" src="https://github.com/user-attachments/assets/c406599f-8f75-4a7c-94b5-983ec1c34f26" />
+
 5. Observed successful anonymous login to the server
 6. Identified navigation to common warez directories including "pub"
 7. Found directory listing commands and evidence of file sharing activity
@@ -97,8 +102,7 @@ asked you to identify where the FTP site is being hosted.
 - **Evidence Collection:** Documented file transfer patterns, anonymous access, and directory structures
 - **Compliance Reporting:** Prepared detailed findings for legal and regulatory requirements
 
-**Tools Used**: Wireshark, Network Protocol Analysis, Digital Evidence Collection  
-**[View Forensics Report →](./Ticket-02-Network-Forensics/)**
+**Tools Used**: Wireshark, Network Protocol Analysis
 
 ---
 
@@ -112,7 +116,8 @@ the server from pulling the required security patches. The resolution must be or
 
 **Troubleshooting Process**:
 1. Used ping from Ubuntu_Server to test connectivity to loopback, local gateway, and internet addresses
-2. Ran traceroute to 8.8.8.8 which revealed a routing loop between Router4 and Router5
+2. Ran traceroute to 8.8.8.8 which revealed a routing loop between Router4 and Router5 <img width="468" height="223" alt="image" src="https://github.com/user-attachments/assets/fe95550d-05cc-41e9-84c2-32a7af78fc48" />
+
 3. Accessed Router4 and examined its routing table with the ip route command
 4. Discovered Router4 had an incorrect default route pointing to 10.10.80.1 instead of 10.10.70.254
 5. Identified lack of NAT configuration on Router4 and Router5 for internet traffic
@@ -129,7 +134,6 @@ the server from pulling the required security patches. The resolution must be or
 - **Service Restoration:** Restored internet connectivity for critical security patch management
 
 **Tools Used**: Network Diagnostic Tools, VyOS CLI, OSPF Configuration, NAT Management  
-**[View Infrastructure Analysis →](./Ticket-03-Infrastructure-Analysis/)**
 
 ---
 
